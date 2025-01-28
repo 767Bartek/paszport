@@ -20,5 +20,10 @@ namespace paszport
         {
             InitializeComponent();
         }
+
+        private void numerText_lostFocus(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
