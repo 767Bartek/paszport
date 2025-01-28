@@ -23,7 +23,7 @@ namespace paszport
 
         private void numerText_lostFocus(object sender, TextChangedEventArgs e)
         {
-
+   
         }
     }
 }
