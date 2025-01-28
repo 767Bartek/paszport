@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:paszport"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="CadetBlue">
+        <Label Content="numer" HorizontalAlignment="Left" Margin="35,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="imie" HorizontalAlignment="Left" Margin="35,92,0,0" VerticalAlignment="Top"/>
+        <Label Content="nazwisko" HorizontalAlignment="Left" Margin="35,138,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="124,51,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Background="Azure"/>
+        <TextBox HorizontalAlignment="Left" Margin="124,96,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Background="Azure"/>
+        <TextBox HorizontalAlignment="Left" Margin="124,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Background="Azure"/>
+        <GroupBox Header="kolor oczu" Margin="35,230,531,100">
+            <StackPanel>
+                <RadioButton Content="niebieskie" HorizontalAlignment="Left" Margin="10,0,0,0" Height="21"/>
+                <RadioButton Content="zielone" HorizontalAlignment="Left" Margin="10,0,0,0" Height="21"/>
+                <RadioButton Content="piwne" HorizontalAlignment="Left" Margin="10,0,0,0" Height="21"/>
+            </StackPanel>
+        </GroupBox>
+        <Button Content="ok" HorizontalAlignment="Left" Margin="400,282,0,0" VerticalAlignment="Top" Width="312" Height="49" Background="Azure"/>
+        <Image HorizontalAlignment="Left" Height="180" Margin="400,73,0,0" VerticalAlignment="Top" Width="135" Source="/000-zdjecie.jpg"/>
+        <Image HorizontalAlignment="Left" Height="180" Margin="592,73,0,0" VerticalAlignment="Top" Width="135" Source="/000-odcisk.jpg"/>
 
     </Grid>
 </Window>
