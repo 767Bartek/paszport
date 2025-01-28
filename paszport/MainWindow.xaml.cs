@@ -21,9 +21,40 @@ namespace paszport
             InitializeComponent();
         }
 
-        private void numerText_lostFocus(object sender, TextChangedEventArgs e)
+
+        private void numerText_TextChanged(object sender, TextChangedEventArgs e)
         {
-   
+            string sciezkaZdjecie = $"/{numerText.Text}-zdjecie.jpg";
+
+            //leweZdjecie.Source = new BitmapImage(new Uri(sciezkaZdjecie, UriKind.RelativeOrAbsolute));
+        }
+
+        private void przyciskOk_Click(object sender, RoutedEventArgs e)
+        {
+            string oczy="";
+
+            if (kolorZielony.IsChecked == true)
+            {
+                oczy = "zielone";
+            }
+            else if (kolorNiebieski.IsChecked == true)
+            {
+                oczy = "niebieski";
+            }
+            else if(kolorPiwne.IsChecked == true) 
+            {
+                oczy = "piwne";
+            }
+
+            if (imieText.Text == "" || naziwskoText.Text == "")
+            {
+                MessageBox.Show("Wypelnij wszystkie dane");
+            }
+            else
+            {
+                MessageBox.Show($"{imieText.Text} {naziwskoText.Text} kolor oczu: {oczy}");
+            }
+            
         }
     }
 }

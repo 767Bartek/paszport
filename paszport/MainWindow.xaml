@@ -10,18 +10,18 @@
         <Label Content="numer" HorizontalAlignment="Left" Margin="35,47,0,0" VerticalAlignment="Top"/>
         <Label Content="imie" HorizontalAlignment="Left" Margin="35,92,0,0" VerticalAlignment="Top"/>
         <Label Content="nazwisko" HorizontalAlignment="Left" Margin="35,138,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="numerText" HorizontalAlignment="Left" Margin="124,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="Azure" LostFocus="numerText_lostFocus"/>
+        <TextBox x:Name="numerText" HorizontalAlignment="Left" Margin="124,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="Azure" TextChanged="numerText_TextChanged"/>
         <TextBox x:Name="imieText" HorizontalAlignment="Left" Margin="124,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="Azure"/>
         <TextBox x:Name="naziwskoText" HorizontalAlignment="Left" Margin="124,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="Azure"/>
         <GroupBox Header="kolor oczu" Margin="35,230,531,100">
             <StackPanel>
-                <RadioButton x:Name="kolorNiebieski" Content="niebieskie" HorizontalAlignment="Left" Margin="10,0,0,0" Height="21"/>
-                <RadioButton x:Name="kolorZielony" Content="zielone" HorizontalAlignment="Left" Margin="10,0,0,0" Height="21"/>
-                <RadioButton x:Name="kolorPiwne" Content="piwne" HorizontalAlignment="Left" Margin="10,0,0,0" Height="21"/>
+                <RadioButton x:Name="kolorNiebieski" Content="niebieskie" HorizontalAlignment="Left" Margin="10,0,0,0" Height="21" GroupName="oczy" IsChecked="True"/>
+                <RadioButton x:Name="kolorZielony" Content="zielone" HorizontalAlignment="Left" Margin="10,0,0,0" Height="21" GroupName="oczy"/>
+                <RadioButton x:Name="kolorPiwne" Content="piwne" HorizontalAlignment="Left" Margin="10,0,0,0" Height="21" GroupName="oczy"/>
             </StackPanel>
         </GroupBox>
-        <Button x:Name="przyciskOk" Content="ok" HorizontalAlignment="Left" Margin="400,282,0,0" VerticalAlignment="Top" Width="312" Height="49" Background="Azure"/>
-        <Image x:Name="leweZdjecie" HorizontalAlignment="Left" Height="180" Margin="400,73,0,0" VerticalAlignment="Top" Width="135" Source="/000-zdjecie.jpg"/>
+        <Button x:Name="przyciskOk" Content="ok" HorizontalAlignment="Left" Margin="400,282,0,0" VerticalAlignment="Top" Width="312" Height="49" Background="Azure" Click="przyciskOk_Click"/>
+        <Image x:Name="leweZdjecie" HorizontalAlignment="Left" Height="178" Margin="400,73,0,0" VerticalAlignment="Top" Width="135" Source="/000-zdjecie.jpg"/>
         <Image x:Name="praweZdjecie" HorizontalAlignment="Left" Height="180" Margin="592,73,0,0" VerticalAlignment="Top" Width="135" Source="/000-odcisk.jpg"/>
 
     </Grid>
